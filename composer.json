@@ -1,5 +1,5 @@
 {
-    "name": "subash/pdfsplit",
+    "name": "warlog7997/pdfsplit",
     "description": "Pure PHP library for PDF splitting, page extraction, and merging. No external dependencies.",
     "type": "library",
     "license": "MIT",
