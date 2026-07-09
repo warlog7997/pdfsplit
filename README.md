@@ -1,4 +1,9 @@
-# subash/phppdf
+# warlog7997/pdfsplit
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/warlog7997/pdfsplit.svg?style=flat)](https://packagist.org/packages/warlog7997/pdfsplit)
+[![Total Downloads](https://img.shields.io/packagist/dt/warlog7997/pdfsplit.svg?style=flat)](https://packagist.org/packages/warlog7997/pdfsplit)
+[![License](https://img.shields.io/packagist/l/warlog7997/pdfsplit.svg?style=flat)](https://packagist.org/packages/warlog7997/pdfsplit)
+[![PHP Version](https://img.shields.io/badge/php-%5E8.0-blue?style=flat)](https://packagist.org/packages/warlog7997/pdfsplit)
 
 A pure PHP library for PDF page extraction, splitting, and merging — no external dependencies, no ImageMagick, no GhostScript.
 
@@ -12,7 +17,7 @@ Handles all modern PDF formats including PDF 1.5+ xref streams, ObjStm compresse
 ## Installation
 
 ```bash
-composer require subash/phppdf
+composer require warlog7997/pdfsplit
 ```
 
 ## Usage
@@ -48,6 +53,15 @@ file_put_contents('extracted.pdf', $pdfBinary);
 // Extract pages 1 through 5
 $pdfBinary = PhpPdf::load('document.pdf')->extractRange(1, 5);
 file_put_contents('pages1to5.pdf', $pdfBinary);
+```
+
+### Merge multiple PDFs
+
+```php
+PhpPdf::merger()
+    ->add('file1.pdf')
+    ->add('file2.pdf')
+    ->save('merged.pdf');
 ```
 
 ### Load from binary string
