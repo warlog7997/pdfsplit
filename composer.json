@@ -1,0 +1,30 @@
+{
+    "name": "subash/pdfsplit",
+    "description": "Pure PHP library for PDF splitting, page extraction, and merging. No external dependencies.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["pdf", "split", "extract", "merge", "php", "parser"],
+    "authors": [
+        {
+            "name": "Subash Bista",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-zlib": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Subash\\PhpPdf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Subash\\PhpPdf\\Tests\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+/vendor/
+/input/
+/split_output/
+*.pdf
+composer.lock
