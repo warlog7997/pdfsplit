@@ -3,7 +3,7 @@
     "description": "Pure PHP library for PDF splitting, page extraction, and merging. No external dependencies.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["pdf", "split", "extract", "merge", "php", "parser"],
+    "keywords": ["pdf", "split-pdf", "php-pdf", "pdf-splitter", "pdf-merger", "pdf-extract", "pdf-manipulation", "pure-php", "zero-dependencies", "no-imagemagick", "no-ghostscript", "pdf-parser", "php8"],
     "authors": [
         {
             "name": "Subash Bista",
